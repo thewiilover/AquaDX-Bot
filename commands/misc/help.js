@@ -46,30 +46,25 @@ module.exports = {
 					},
 				]);
 
-			// Attempts to send embed in DMs.
+				// Send embed in the channel where the command was activated.
 
-			return message.author
-				.send({ embeds: [helpEmbed] })
+				return message.channel
+					.send({ embeds: [helpEmbed] })
+					.then(() => {
+						message.reply({
+							content: "I've sent the help information in this channel!",
+						});
+					})
+					.catch((error) => {
+						// On failing, throw error.
 
-				.then(() => {
-					if (message.channel.type === ChannelType.DM) return;
+						console.error(
+							`Could not send help embed in the channel.\n`,
+							error
+						);
 
-					// On validation, reply back.
-
-					message.reply({
-						content: "I've sent you a DM with all my commands!",
+						message.reply({ content: "It seems like I can't send messages in this channel!" });
 					});
-				})
-				.catch((error) => {
-					// On failing, throw error.
-
-					console.error(
-						`Could not send help DM to ${message.author.tag}.\n`,
-						error
-					);
-
-					message.reply({ content: "It seems like I can't DM you!" });
-				});
 		}
 
 		// If argument is provided, check if it's a command.
