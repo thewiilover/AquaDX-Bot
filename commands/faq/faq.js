@@ -15,7 +15,7 @@ const { EmbedBuilder, ChannelType } = require("discord.js");
  * @type {import('../../typings').LegacyCommand}
  */
 module.exports = {
-    name: "hello",
+    name: "faq",
     description: "Sends an embed that says Hello World!",
     execute(message, args) {
         const helloEmbed = new EmbedBuilder()
