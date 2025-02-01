@@ -1,7 +1,7 @@
 const { EmbedBuilder } = require('discord.js');
 
 module.exports = {
-    name: 'chusam',
+    name: 'chusan',
     description: 'Sends an embed with a header, subheader, and body text',
     execute(message, args) {
         const embed = new EmbedBuilder()
