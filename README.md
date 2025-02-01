@@ -1,6 +1,6 @@
 # AquaDX Discord Bot Repo
 
-# Credits
+## Credits
 
 + [Azelea](https://github.com/hykilpikonna) - AquaDX Developer
 + [thewiilover](https://github.com/thewiilover) - Bot Developer
