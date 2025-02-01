@@ -10,6 +10,9 @@ RUN git clone https://github.com/thewiilover/AquaDX-Bot.git
 # Change directory to the cloned repository
 WORKDIR /app/AquaDX-Bot
 
+# Copy the config.json
+COPY config.json /app/AquaDX-Bot/config.json
+
 # Install dependencies
 RUN npm install
 
