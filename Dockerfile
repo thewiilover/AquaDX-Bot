@@ -14,4 +14,4 @@ WORKDIR /app/AquaDX-Bot
 RUN npm install
 
 # Start the application
-CMD ["npm", "start"]
+RUN npm start
