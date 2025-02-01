@@ -1,9 +1,3 @@
-/**
- * @file Dynamic help command
- * @author Naman Vrati
- * @since 1.0.0
- * @version 3.3.0
- */
 
 // Deconstructing prefix from config file to use in help command
 const { prefix } = require("./../../config.json");
