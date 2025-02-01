@@ -3,7 +3,7 @@
 .vscode/
 .idea/
 .node-version
-
+.env
 # Logs
 logs
 *.log
