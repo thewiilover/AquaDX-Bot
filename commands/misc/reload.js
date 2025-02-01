@@ -3,7 +3,7 @@
 const fs = require("fs");
 
 /**
- * @type {import('../typings').LegacyCommand}
+ * @type {import('../../typings').LegacyCommand}
  */
 module.exports = {
 	name: "reload",
@@ -58,7 +58,7 @@ module.exports = {
 
 		try {
 			/**
-			 * @type {import('../typings').LegacyCommand}
+			 * @type {import('../../typings').LegacyCommand}
 			 * @description The new command (code fetch)
 			 */
 

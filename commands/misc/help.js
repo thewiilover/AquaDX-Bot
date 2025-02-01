@@ -1,12 +1,12 @@
 
 // Deconstructing prefix from config file to use in help command
-const { prefix } = require("../config.json");
+const { prefix } = require("../../config.json");
 
 // Deconstructing EmbedBuilder to create embeds within this command
 const { EmbedBuilder, ChannelType } = require("discord.js");
 
 /**
- * @type {import('../typings').LegacyCommand}
+ * @type {import('../../typings').LegacyCommand}
  */
 module.exports = {
 	name: "help",
