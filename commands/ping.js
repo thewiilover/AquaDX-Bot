@@ -1,6 +1,6 @@
 
 /**
- * @type {import('../../typings').LegacyCommand}
+ * @type {import('../typings').LegacyCommand}
  */
 module.exports = {
 	name: "ping",
