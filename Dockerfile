@@ -17,4 +17,4 @@ COPY config.json /app/AquaDX-Bot/config.json
 RUN npm install
 
 # Start the application
-RUN npm start
+CMD ["npm", "start"]
